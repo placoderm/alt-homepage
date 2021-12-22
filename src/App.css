@@ -1,0 +1,101 @@
+/* * {
+  border: 1px solid;
+} */
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#url-builder {
+  width: 500px;
+  /* height: 500px; */
+  margin: 2rem auto auto auto;
+}
+
+#input-field-container {
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+  font-size: 1.5rem;
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+#input-field-container label {
+  color: rgb(133, 133, 133);
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.6rem;
+  left: 0.6rem;
+  background-color: white;
+  padding: 0 0.41rem;
+}
+
+#input-field-container input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  cursor: ;
+}
+
+#url-builder input {
+  /* padding: 1rem; */
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+#url-builder div {
+  margin-top: 1rem;
+}
+
+#error-message-in-range {
+  color: green;
+  font-size: 0.7rem;
+}
+#error-message {
+  color: red;
+  height: 1rem;
+  font-size: 0.7rem;
+}
+
+.disabled {
+  color: gainsboro;
+}
+
+#url-button {
+  background: purple;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+}
+
+#url-button:hover {
+  background: black;
+}
+#url-button a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 975px) {
+  #url-builder {
+    width: 300px;
+  }
+  #url-button {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 280px;
+    margin: auto;
+  }
+  #layout-button-area {
+    display: flex;
+    flex-direction: column;
+  }
+}
