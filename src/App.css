@@ -1,0 +1,251 @@
+/* * {
+  border: 1px solid;
+} */
+
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#url-builder {
+  width: 500px;
+  /* height: 500px; */
+  margin: 2rem auto auto auto;
+}
+
+#input-field-container {
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+  font-size: 1.5rem;
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+#input-field-container label {
+  color: rgb(133, 133, 133);
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.6rem;
+  left: 0.6rem;
+  background-color: white;
+  padding: 0 0.41rem;
+}
+
+#input-field-container input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+#url-builder input {
+  /* padding: 1rem; */
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+#radiobutton-area-box {
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#radiobutton-area-box-label {
+  color: rgb(133, 133, 133);
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5rem;
+  left: 6rem;
+  background-color: white;
+  padding: 0 0.41rem;
+  width: 7.5rem;
+  /* border: solid 1px; */
+}
+
+.radiobuttonarea {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+div.radiobuttonarea label {
+  padding-right: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+
+div.radiobuttonarea label input {
+  margin-right: 0px;
+}
+
+#message-area {
+  height: 1rem;
+  width: 320px;
+  font-size: 0.7rem;
+  position: relative;
+  top: -0.65rem;
+  margin: auto;
+}
+
+#in-range-message,
+#error-message {
+  background-color: white;
+  padding: 0 0.5rem;
+  display: inline-block;
+  /* margin: 0 0.5rem; */
+}
+
+#in-range-message {
+  color: green;
+  /* padding: 0 0.5rem; */
+}
+#error-message {
+  color: red;
+  /* padding: 0 0.5rem; */
+}
+
+#link-button-area {
+  text-align: center;
+}
+
+.url-button-class {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* justify-content: center; */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 440px;
+  margin: auto auto 10px auto;
+  /* text-decoration: none; */
+}
+
+a:focus div.url-button-class {
+  outline: none;
+  box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
+}
+
+#url-button {
+  justify-content: center;
+}
+
+.image-container {
+  float: left;
+}
+/* .logoImage {
+  margin-right: 0.5rem; 
+} */
+
+.disabled {
+  color: gainsboro;
+}
+
+div.SC {
+  background: #ce8400;
+}
+div.SCALT {
+  background: #ad2806;
+}
+
+div.SF {
+  background: #b45250;
+}
+div.DT {
+  background: #b87049;
+}
+div.ABT {
+  background: #7f9861;
+}
+
+#url-button.nolink {
+  background: gray;
+}
+
+.url-button-class:hover,
+#url-button:hover {
+  background: black;
+}
+a.url-button-link,
+#url-button a {
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 975px) {
+  #url-builder {
+    width: 350px;
+    margin: 2rem auto auto auto;
+  }
+  #input-field-container {
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 280px;
+  }
+
+  div.url-button-class {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    font-size: 0.8rem;
+    /* text-decoration: none; */
+    margin: auto auto 10px auto;
+  }
+  .radiobuttonarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+  }
+
+  #radiobutton-area-box {
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+  }
+  #websites-links {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #websites-links,
+  #links-area {
+    display: none !important;
+  }
+}
+
+#links-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  margin: 3rem;
+}
+.book-link-area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+
+#websites-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
